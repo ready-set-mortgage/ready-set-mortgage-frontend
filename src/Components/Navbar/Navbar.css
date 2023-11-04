@@ -13,7 +13,7 @@ nav {
 }
 
 .navbar-logo {
-  width: 14rem;
+  width: 16rem;
   height: auto;
 }
 
@@ -24,7 +24,7 @@ nav {
   }
 
   .navbar-logo {
-    width: 12rem;
+    width: 14rem;
     height: auto;
   }
 }
