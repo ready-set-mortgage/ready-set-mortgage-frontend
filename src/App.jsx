@@ -1,8 +1,11 @@
-import './App.css'
+import { Navbar } from './Components';
+import './App.css';
 
 export default function App() {
 
   return (
-    <h1>Ready Set Mortgage</h1>
+    <>
+      <Navbar />
+    </>
   )
 }
