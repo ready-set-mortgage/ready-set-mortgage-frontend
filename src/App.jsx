@@ -1,4 +1,4 @@
-import { Navbar } from './Components';
+import { Navbar, Dashboard } from './Components';
 import './App.css';
 
 export default function App() {
@@ -6,6 +6,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <Dashboard />
     </>
   )
 }

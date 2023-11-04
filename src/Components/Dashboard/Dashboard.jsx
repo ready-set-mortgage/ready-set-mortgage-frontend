@@ -1,7 +1,38 @@
-import { CircularProgressbar } from "react-circular-progressbar"
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 
 export default function Dashboard() {
   return (
-    <CircularProgressbar value={70} text="70" />
+    <div className="dashboard">
+      <div style={{ width: 150, height: 150 }}>
+        <CircularProgressbar
+          value={70}
+          text="70"
+          styles={buildStyles({
+            pathColor: "#770ef8",
+            textColor: "#770ef8",
+          })}
+        />
+      </div>
+      <div style={{ width: 150, height: 150 }}>
+        <CircularProgressbar
+          value={70}
+          text="70"
+          styles={buildStyles({
+            pathColor: "#770ef8",
+            textColor: "#770ef8",
+          })}
+        />
+      </div>
+      <div style={{ width: 150, height: 150 }}>
+        <CircularProgressbar
+          value={70}
+          text="70"
+          styles={buildStyles({
+            pathColor: "#770ef8",
+            textColor: "#770ef8",
+          })}
+        />
+      </div>
+    </div>
   )
 }
