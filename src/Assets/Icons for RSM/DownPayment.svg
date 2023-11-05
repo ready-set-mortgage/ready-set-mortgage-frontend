@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <g id="hair" transform="matrix(2.596945, 0, 0, 2.560349, 196.325671, 146.840044)" style=""/>
+  <g id="skin" transform="matrix(2.596945, 0, 0, 2.560349, 196.325671, 146.840044)" style=""/>
+  <g id="skin-shadow" transform="matrix(2.596945, 0, 0, 2.560349, 196.325671, 146.840044)" style=""/>
+  <g id="g-2" transform="matrix(1, 0, 0, 1, 338.094213, 66.692979)"/>
+  <g id="g-3" transform="matrix(1, 0, 0, 1, 338.094213, 66.692979)"/>
+  <g id="g-4" transform="matrix(1, 0, 0, 1, 338.094213, 66.692979)"/>
+  <g id="g-1" transform="matrix(2.613606, 0, 0, 2.65852, 255.364719, 145.799242)" style=""/>
+  <g id="g-5" transform="matrix(2.613606, 0, 0, 2.65852, 255.364719, 145.799242)" style=""/>
+  <g id="g-6" transform="matrix(2.613606, 0, 0, 2.65852, 255.364719, 145.799242)" style=""/>
+  <g id="color" transform="matrix(2.555184, 0, 0, 2.809414, 247.631138, 109.372957)" style=""/>
+  <g id="g-7" transform="matrix(2.555184, 0, 0, 2.809414, 247.631138, 109.372957)" style=""/>
+  <g id="g-8" transform="matrix(2.555184, 0, 0, 2.809414, 247.631138, 109.372957)" style=""/>
+  <g id="g-9" transform="matrix(2.555184, 0, 0, 2.809414, 247.631138, 109.372957)" style=""/>
+  <g id="g-10" transform="matrix(2.491158, 0, 0, 2.622516, 250.110599, 124.700716)" style=""/>
+  <g id="g-13" transform="matrix(2.491158, 0, 0, 2.622516, 250.110599, 124.700716)" style=""/>
+  <g id="g-12" transform="matrix(2.567299, 0, 0, 2.552537, 245.694111, 184.032946)" style=""/>
+  <g id="g-14" transform="matrix(2.567299, 0, 0, 2.552537, 245.694111, 184.032946)" style=""/>
+  <g id="g-15" transform="matrix(2.567299, 0, 0, 2.552537, 245.694111, 184.032946)" style=""/>
+  <g id="g-11" transform="matrix(2.983413, 0, 0, 3.133865, 160.67702, 112.241762)" style="">
+    <rect x="19" y="32" width="34" height="24" fill="#FFFFFF" stroke="none"/>
+    <rect x="25" y="40" width="9" height="16" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" style="fill: rgb(59, 66, 82);"/>
+    <rect x="40" y="40" width="8" height="7" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" style="fill: rgb(59, 66, 82);"/>
+    <polygon stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="53,32 19,32.0003 19,31 35,15 53,31" style="fill: rgb(59, 66, 82);"/>
+    <polygon stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="29,21 24,26 24,17 29,17" style="fill: rgb(59, 66, 82);"/>
+  </g>
+  <g id="g-16" transform="matrix(2.983413, 0, 0, 3.133865, 160.67702, 112.241762)" style=""/>
+  <g id="g-17" transform="matrix(2.983413, 0, 0, 3.133865, 160.67702, 112.241762)" style=""/>
+  <g id="g-18" transform="matrix(2.983413, 0, 0, 3.133865, 160.67702, 112.241762)" style=""/>
+  <g id="line" transform="matrix(2.983413, 0, 0, 3.133865, 160.67702, 112.241762)" style="">
+    <rect x="25" y="40" width="9" height="16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <rect x="40" y="40" width="8" height="7" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="53,32 19,32.0003 19,31 35,15 53,31"/>
+    <rect x="19" y="32" width="34" height="24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="29,21 24,26 24,17 29,17"/>
+  </g>
+</svg>
