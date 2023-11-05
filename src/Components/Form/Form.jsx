@@ -15,7 +15,9 @@ export default function Form() {
     credit_score: 0
   })
 
-  function handleSubmit() {
+  async function handleSubmit(e) {
+    e.preventDefault()
+
     const apiPromise = fetch("https://api.readysetmortgage.co/readiness", {
       method: 'POST',
       headers: {
@@ -23,6 +25,15 @@ export default function Form() {
       },
       body: JSON.stringify({ formInput })
     })
+
+    const responseApi = await apiPromise;
+
+    if (responseApi.ok) {
+      responseApi.JSON = await responseApi.json();
+      setAssessment(responseApi);
+    } else {
+      console.error(responseApi);
+    }
   }
 
   function handleInputChange(e) {
