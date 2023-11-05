@@ -29,9 +29,9 @@ export default function Form() {
     const responseApi = await apiPromise;
 
     if (responseApi.ok) {
-      responseApi.JSON = await responseApi.json();
-      setAssessment(responseApi);
-      console.log(responseApi);
+      const responseApiJSON = await responseApi.json();
+      setAssessment(responseApiJSON);
+      console.log(responseApiJSON);
     } else {
       console.error(responseApi);
     }
