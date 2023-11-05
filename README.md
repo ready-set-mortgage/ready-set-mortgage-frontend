@@ -6,7 +6,7 @@
 </p>
 
 <h3 align="center">
-  An interactive wizard to help new potential homeowners determine if they're ready for home ownership based on their finances, and provide helpful feedback using Generative AI! 
+  An interactive wizard to help new potential homeowners determine if they're ready for home ownership based on their finances, and provide helpful feedback using Generative AI!
 </h3>
 
 <p align="center">
@@ -17,11 +17,11 @@
 </p>
 <br/>
 
-Try the site out at [readysetmortgage.co](https://readysetmortgage.co)!
+Try the site out at [readysetmortgage.co](https://readysetmortgage.co)
 
 ## Technologies
 
-This site is built with React and Bootstrap.
+This site is built with React.
 
 ## License
 
