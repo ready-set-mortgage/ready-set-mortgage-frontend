@@ -15,6 +15,7 @@ export default function Form() {
     down_payment_amount: "",
     credit_score: ""
   });
+  const [aiOutput, setAiOutput] = useState("")
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -27,7 +28,17 @@ export default function Form() {
       body: JSON.stringify({ ...formInput })
     })
 
-    const responseApi = await apiPromise;
+    const responseApi = await apiAIPromise;
+
+    const apiAIPromise = fetch("https://api.readysetmortgage.co/ai_feedback", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ ...formInput })
+    })
+
+    const responseApiAI = await apiAIPromise;
 
     if (responseApi.ok) {
       const responseApiJSON = await responseApi.json();
@@ -35,6 +46,14 @@ export default function Form() {
       console.log(responseApiJSON);
     } else {
       console.error(responseApi);
+    }
+
+    if (responseApiAI.ok) {
+      const responseApiAIJSON = await responseApiAI.json();
+      setAiOutput(responseApiAIJSON);
+      console.log(responseApiAIJSON);
+    } else {
+      console.error(responseApiAI);
     }
   }
 
@@ -51,7 +70,7 @@ export default function Form() {
     <>
       {Object.keys(formOutput).length > 0 ?
         <div className="assessment-container">
-          <Assessment output={formOutput} />
+          <Assessment output={formOutput} aiOutput={aiOutput} />
           {/* <button onClick={() => setFormOutput({})} className="assess-again-button">Assess Again</button> */}
         </div> :
         <div className="form-container">
