@@ -65,7 +65,7 @@ export default function Form() {
           <button className="form-button">Submit</button>
         </form>
       </div>
-      {formOutput ? <Assessment output={formOutput} /> : null}
+      {Object.keys(formOutput).length > 0 ? <Assessment output={formOutput} /> : null}
     </>
   )
 }
