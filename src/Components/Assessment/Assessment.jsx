@@ -9,7 +9,7 @@ export default function Assessment({ output }) {
 
   return (
     <>
-      <h2>{readiness}</h2>
+      <h2>{readiness == "N" ? "You are not likely eligible for the mortgage." : readiness == "M" ? "You might be eligible for the mortgage." : "You are very likely eligible for the mortgage."}</h2>
       {messages}
       {credit.individual_readiness}
       {dti.individual_readiness}
