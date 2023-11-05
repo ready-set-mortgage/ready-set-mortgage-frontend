@@ -5,8 +5,8 @@ import "./Navbar.css"
 export default function Navbar() {
   return (
     <nav>
-      <Link to="/"><div className="navbar-logo"><img className="navbar-icon" src={logo} alt="rocket icon" /><h2>Ready, set, mortgage!</h2></div></Link>
-      <Link to="/apply"><button>Assess Eligibility</button></Link>
+      <Link to="/"><div className="navbar-logo"><img className="navbar-icon" src={logo} alt="rocket icon" /><h2>Ready, Set, Mortgage!</h2></div></Link>
+      <Link to="/apply"><button>Assess My Readiness!</button></Link>
     </nav>
   )
 }

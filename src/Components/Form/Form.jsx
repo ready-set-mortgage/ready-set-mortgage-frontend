@@ -48,16 +48,16 @@ export default function Form() {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <h3 className="form-title">Mortgage Eligibility Assessment</h3>
+        <h3 className="form-title">Just enter a few things about yourself to see if you're ready for home ownership!</h3>
         <div className="form">
-          <input name="gross_monthly_income" value={formInput.gross_monthly_income} type="text" placeholder="Gross monthly income" onChange={handleInputChange}/>
-          <input name="monthly_car_payment" value={formInput.monthly_car_payment} type="text" placeholder="Monthly car payment" onChange={handleInputChange}/>
-          <input name="monthly_credit_card_payment" value={formInput.monthly_credit_card_payment} type="text" placeholder="Monthly credit card payment" onChange={handleInputChange}/>
-          <input name="student_loan_payment" value={formInput.student_loan_payment} type="text" placeholder="Student loan payment" onChange={handleInputChange}/>
-          <input name="home_appraised_value" value={formInput.home_appraised_value} type="text" placeholder="Home appraised value" onChange={handleInputChange}/>
-          <input name="est_monthly_mortgage_payment" value={formInput.est_monthly_mortgage_payment} type="text" placeholder="Estimated monthly mortgage payment" onChange={handleInputChange}/>
-          <input name="down_payment_amount" value={formInput.down_payment_amount} type="text" placeholder="Down payment amount" onChange={handleInputChange}/>
-          <input name="credit_score" value={formInput.credit_score} type="text" placeholder="Credit score" onChange={handleInputChange}/>
+          <input name="gross_monthly_income" value={formInput.gross_monthly_income} type="text" placeholder="Gross Monthly Income" onChange={handleInputChange}/>
+          <input name="monthly_car_payment" value={formInput.monthly_car_payment} type="text" placeholder="Monthly Car Payment" onChange={handleInputChange}/>
+          <input name="monthly_credit_card_payment" value={formInput.monthly_credit_card_payment} type="text" placeholder="Monthly Credit Card Payment" onChange={handleInputChange}/>
+          <input name="student_loan_payment" value={formInput.student_loan_payment} type="text" placeholder="Student Loan Payment" onChange={handleInputChange}/>
+          <input name="home_appraised_value" value={formInput.home_appraised_value} type="text" placeholder="Home Appraised Value" onChange={handleInputChange}/>
+          <input name="est_monthly_mortgage_payment" value={formInput.est_monthly_mortgage_payment} type="text" placeholder="Estimated Monthly Mortgage Payment" onChange={handleInputChange}/>
+          <input name="down_payment_amount" value={formInput.down_payment_amount} type="text" placeholder="Down Payment Amount" onChange={handleInputChange}/>
+          <input name="credit_score" value={formInput.credit_score} type="text" placeholder="Credit Score" onChange={handleInputChange}/>
         </div>
         <button className="form-button">Submit</button>
       </form>
