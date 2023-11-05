@@ -5,14 +5,14 @@ export default function Form() {
 
   const [assessment, setAssessment] = useState("");
   const [formInput, setFormInput] = useState({
-    gross_monthly_income: 0,
-    monthly_car_payment: 0,
-    monthly_credit_card_payment: 0,
-    student_loan_payment: 0,
-    home_appraised_value: 0,
-    est_monthly_mortgage_payment: 0,
-    down_payment_amount: 0,
-    credit_score: 0
+    gross_monthly_income: null,
+    monthly_car_payment: null,
+    monthly_credit_card_payment: null,
+    student_loan_payment: null,
+    home_appraised_value: null,
+    est_monthly_mortgage_payment: null,
+    down_payment_amount: null,
+    credit_score: null
   })
 
   async function handleSubmit(e) {
