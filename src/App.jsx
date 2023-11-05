@@ -1,12 +1,16 @@
-import { Navbar, Dashboard } from './Components';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar, Dashboard, Landing } from './Components';
 import './App.css';
 
 export default function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Dashboard />
-    </>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   )
 }

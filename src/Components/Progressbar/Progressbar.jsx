@@ -1,4 +1,5 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "./Progressbar.css";
 
 // eslint-disable-next-line react/prop-types
 export default function Progressbar({ value }) {
