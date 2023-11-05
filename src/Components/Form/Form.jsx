@@ -31,6 +31,7 @@ export default function Form() {
     if (responseApi.ok) {
       responseApi.JSON = await responseApi.json();
       setAssessment(responseApi);
+      console.log(responseApi);
     } else {
       console.error(responseApi);
     }
@@ -61,7 +62,7 @@ export default function Form() {
         </div>
         <button className="form-button">Submit</button>
       </form>
-      {assessment ? assessment : null}
+      {/* {assessment ? assessment : null} */}
     </div>
   )
 }
