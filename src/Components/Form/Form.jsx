@@ -23,7 +23,7 @@ export default function Form() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ formInput })
+      body: JSON.stringify({ ...formInput })
     })
 
     const responseApi = await apiPromise;
