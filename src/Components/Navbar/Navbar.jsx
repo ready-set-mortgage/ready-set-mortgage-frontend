@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav>
       <Link to="/"><div className="navbar-logo"><img className="navbar-icon" src={logo} alt="rocket icon" /><h2>Ready, set, mortgage!</h2></div></Link>
-      <Link to="/apply"><button>Apply Now</button></Link>
+      <Link to="/apply"><button>Assess Eligibility</button></Link>
     </nav>
   )
 }
