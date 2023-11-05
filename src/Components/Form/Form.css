@@ -1,0 +1,25 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  background-color: #3B4252;
+  border-radius: 25px;
+  padding: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.form-title {
+  color: white;
+}
+
+.form-button {
+  background-color: black;
+  color: white;
+}

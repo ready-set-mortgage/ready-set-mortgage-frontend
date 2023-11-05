@@ -10,7 +10,7 @@ export default function Landing() {
       <h5>We guide you through our quick application process for buying a home.</h5>
       <h5>You receive an immediate response along with our AI powered feedback.</h5>
       <br></br>
-      <Link to="/dashboard"><button>Apply Now</button></Link>
+      <Link to="/apply"><button>Apply Now</button></Link>
     </div>
   )
 }

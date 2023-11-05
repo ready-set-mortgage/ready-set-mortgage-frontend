@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar, Dashboard, Landing } from './Components';
+import { Navbar, Form, Landing } from './Components';
 import './App.css';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/apply" element={<Form />} />
       </Routes>
     </BrowserRouter>
   )
