@@ -1,9 +1,10 @@
+import { Assessment } from "../"
 import { useState } from "react";
 import "./Form.css";
 
 export default function Form() {
 
-  const [assessment, setAssessment] = useState({});
+  const [formOutput, setFormOutput] = useState({});
   const [formInput, setFormInput] = useState({
     gross_monthly_income: "",
     monthly_car_payment: "",
@@ -13,7 +14,7 @@ export default function Form() {
     est_monthly_mortgage_payment: "",
     down_payment_amount: "",
     credit_score: ""
-  })
+  });
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -30,7 +31,7 @@ export default function Form() {
 
     if (responseApi.ok) {
       const responseApiJSON = await responseApi.json();
-      setAssessment(responseApiJSON);
+      setFormOutput(responseApiJSON);
       console.log(responseApiJSON);
     } else {
       console.error(responseApi);
@@ -64,7 +65,7 @@ export default function Form() {
           <button className="form-button">Submit</button>
         </form>
       </div>
-      {assessment ? assessment.readiness : null}
+      {formOutput ? <Assessment output={formOutput} /> : null}
     </>
   )
 }

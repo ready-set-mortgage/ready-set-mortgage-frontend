@@ -1,3 +1,5 @@
+import "./Assessment.css";
+
 export default function Assessment() {
   return (
     <h1>
