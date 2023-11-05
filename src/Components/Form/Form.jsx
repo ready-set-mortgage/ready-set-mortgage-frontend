@@ -28,17 +28,17 @@ export default function Form() {
       body: JSON.stringify({ ...formInput })
     })
 
-    const responseApi = await apiAIPromise;
+    const responseApi = await apiPromise;
 
-    const apiAIPromise = fetch("https://api.readysetmortgage.co/ai_feedback", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ ...formInput })
-    })
+    // const apiAIPromise = fetch("https://api.readysetmortgage.co/ai_feedback", {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify({ ...formInput })
+    // })
 
-    const responseApiAI = await apiAIPromise;
+    // const responseApiAI = await apiAIPromise;
 
     if (responseApi.ok) {
       const responseApiJSON = await responseApi.json();
@@ -48,13 +48,13 @@ export default function Form() {
       console.error(responseApi);
     }
 
-    if (responseApiAI.ok) {
-      const responseApiAIJSON = await responseApiAI.json();
-      setAiOutput(responseApiAIJSON);
-      console.log(responseApiAIJSON);
-    } else {
-      console.error(responseApiAI);
-    }
+    // if (responseApiAI.ok) {
+    //   const responseApiAIJSON = await responseApiAI.json();
+    //   setAiOutput(responseApiAIJSON);
+    //   console.log(responseApiAIJSON);
+    // } else {
+    //   console.error(responseApiAI);
+    // }
   }
 
   function handleInputChange(e) {
@@ -70,7 +70,7 @@ export default function Form() {
     <>
       {Object.keys(formOutput).length > 0 ?
         <div className="assessment-container">
-          <Assessment output={formOutput} aiOutput={aiOutput} />
+          <Assessment output={formOutput} />
           {/* <button onClick={() => setFormOutput({})} className="assess-again-button">Assess Again</button> */}
         </div> :
         <div className="form-container">
