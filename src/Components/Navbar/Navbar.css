@@ -14,7 +14,11 @@ nav {
 }
 
 .navbar-logo {
-  width: 16rem;
+  display: flex;
+}
+
+.navbar-icon {
+  width: 3rem;
   height: auto;
 }
 
@@ -24,8 +28,8 @@ nav {
     padding-right: 5%;
   }
 
-  .navbar-logo {
-    width: 14rem;
+  .navbar-icon {
+    width: 1.5rem;
     height: auto;
   }
 }
