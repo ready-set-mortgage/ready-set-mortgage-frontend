@@ -46,7 +46,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #2E3440;
+  background-color: #2E3440;
 }
 
 /*

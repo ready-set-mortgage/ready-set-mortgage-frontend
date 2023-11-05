@@ -20,6 +20,10 @@
 }
 
 .form-button {
-  background-color: black;
+  background-color: #171a20;
   color: white;
+}
+
+.form-button:hover {
+  background-color: black;
 }
